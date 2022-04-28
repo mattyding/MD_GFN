@@ -1,6 +1,8 @@
 Notes:
 
 # 4/28/22
+Tikquuss's implementation here: https://github.com/Tikquuss/GflowNets_Tutorial/blob/main/2_Hypergrid_env.ipynb
+
 I was still having trouble figuring out the issue with the EBengio code this week so I used tikquuss's implementation instead. I was able to achieve the expected results with the GFN sampler. Raw sample results are in the results/ directory and plots of the reward functions and samples are in the figures directory.
 
 I defined the following loss function to compare different samplers (not sure if this is already a thing). Since the exact probability distribution of the cosine function is known, I calculated the loss of a sample draw by summing the squared difference of the Monte Carlo distrbutions (i.e., sum of draws over total draws) from the true probabilities. This loss evaluator is in the file plot_loss.py
